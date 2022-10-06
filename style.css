@@ -1,0 +1,306 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	width: auto;
+	background: #128c7e;
+	padding: 15px;
+}
+header img {
+	width: 52px;
+}
+body {
+	font-size: 62.5%;
+	width: auto;
+	height: auto;
+	background-image: url(imagens/background-zap.png);
+	background-size: contain;
+	height: 100vh;
+}
+main {
+	display: flex;
+	background: #DDDDDD;
+
+}
+.container {
+	position: relative;
+	height: auto;
+	width: 90%;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 50px 10px 32px 10px;
+
+}
+.secao-um {
+	padding: 85px 77px 0px 0;
+	
+}
+section h1 {
+		font-size: 2.0rem;
+		margin-bottom: 5px;
+}
+section p {
+	font-size: 0.8rem;
+}
+h6 {
+	font-size: 0.7rem;
+	margin: 10px 0 0 10px;
+}
+.text {
+	position: absolute;
+	color: #128a3e;
+	margin-left: 10px;
+}
+.input-texto {
+	font-size: 0.86rem;
+	padding: 10px;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 0px 10px #888888;
+	resize: none;
+	outline: unset;
+}
+.input-texto:hover {
+	background: #EEEEEE;
+}
+.input-texto:focus {
+	background: #BBFFBB;
+	box-shadow: inset;
+}
+.botoes {
+	margin: 50px 0 10px 0;
+	text-align: center;
+}
+.encriptar, .descriptografar {
+	width: 40%;
+	padding: 5px;
+	margin-right: 10px;
+	font-size: 20px;
+	background: #DDDDDD;
+	border: solid;
+	border-color: #77d7c8;
+	font-weight: bold;	
+	border-radius: 40px;
+	color: #128c7e;
+	cursor: pointer;
+}
+.encriptar:hover {
+	background: #128c7e; 
+	color: #FFFFFF;
+	border: none;
+	transition: 0.5s;
+}
+.encriptar:disabled {
+	opacity: .4;
+	cursor: default;
+}
+.encriptar:disabled:hover {
+	background: #DDDDDD;
+}
+.descriptografar:hover {
+	background: #128c7e; 
+	color: #FFFFFF;
+	border: none;
+	transition: 0.5s;
+}
+.descriptografar:disabled {
+	opacity: .4;
+	cursor: default;
+}
+.descriptografar:disabled:hover {
+	background: #DDDDDD;
+
+}
+.mensagem-box {
+	position: relative;
+	margin: 0 auto;
+	
+}
+.espaco-dois {
+	padding: 10px;
+	right: 50px;
+	outline: unset;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 0px 10px #888888;
+	resize: none;
+	background-image: url("imagens/lupa-alura.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: bottom;
+	background-color: #EEEEEE;
+}
+
+/* criptografia realizada*/
+.espaco-dois.success {
+	
+	padding: 10px;
+	right: 50px;
+	outline: unset;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 0px 10px #888888;
+	resize: none;
+	background-image: url("imagens/checlist-criptografia.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: bottom;
+	background-color: #EEEEEE;
+}	
+/* Descriptografia realizada*/
+.espaco-dois.descriptografia {
+	
+	padding: 10px;
+	right: 50px;
+	outline: unset;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 0px 10px #888888;
+	resize: none;
+	background-image: url("imagens/checklist-descriptografia.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: bottom;
+	background-color: #EEEEEE;
+}	
+.copiar {
+	width: 100%;
+	padding: 5px 80px;
+	font-size: 20px;
+	background: #128c7e;
+	border: solid;
+	border-color: #77d7c8;
+	font-weight: bold;	
+	border-radius: 11px;
+	color: #FFF;
+	cursor: pointer;
+}
+.copiar:hover {
+	background: #12BB7e; 
+	color: #FFFFFF;
+	border: none;
+	transition: 0.5s;
+}
+.copiar:active {
+	background: #DDDDDD;
+	color: #128c7e;
+	border: solid;
+	border-color: #77d7c8;
+}
+.copiar:disabled {
+	background: #DDDDDD;
+	color: #128c7e;
+	opacity: .4;
+	cursor: default;
+}
+.copiar:disabled:hover {
+	background: #DDDDDD;
+}
+
+footer {
+	width: auto;
+	height: auto;
+	background: #273443;
+	text-align: center;
+	padding: 10px 0;
+	vertical-align: bottom; 
+}
+.rodape {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+}
+	/*Media Queries*/
+@media screen and (max-width: 940px) {
+
+section h1 {
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+}
+h6 {
+	font-size: 12px;
+	margin: 10px 0 0 10px;
+}
+.container {
+	height: 100%;	
+	padding: 20px 10px 30px 10px;
+}
+.secao-um {
+	display: inline-flex;
+	width: 100%;
+	padding: 85px 0px 0px 0;
+	margin:0 0 40px  0;
+}
+.input-texto {
+	display: inline-flex;
+	padding: 10px;
+}
+main {
+	height: 100%;
+	display: block;
+}
+.mensagem-box {
+	display: flex;
+	border: none;
+}
+section #div-aparece {
+	display: flex;
+}
+.copiar {
+	margin-left: 20px;	
+	padding: 20px 40px;
+}
+h6 {
+	position: absolute;
+	top: 75px;
+}
+.encriptar, .descriptografar {
+	width: 100%;
+	font-size: 16px;
+	padding: 15px 10px;
+}
+.botoes {
+	margin: 20px 0 10px 10px;
+	padding: 30px 0 0 0;
+} 
+.espaco-dois {
+	width: 500px;
+	height: 300px;
+	display: block;
+	background-size: 40%;
+}
+.espaco-dois.success, .espaco-dois.descriptografia {
+	background-size: 40%;
+}
+footer {
+	width: 100%;
+}
+}
+@media screen and (max-width: 800px) {
+section h1 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.container {
+	padding-top: 10px;
+}
+.secao-um {
+	display: inline-flex;
+	padding: 50px 0px 0px 0;
+	margin:0 0 40px  0;
+}
+.encriptar, .descriptografar {
+	width: 100%;
+	font-size: 16px;
+	padding: 15px 10px;
+}
+.botoes {
+	margin: 20px 0 10px 10px;
+	padding: 30px 0 0 0;
+}
+h6 {
+	position: absolute;
+	top: 300px;
+	font-size: 10px;
+}
+}

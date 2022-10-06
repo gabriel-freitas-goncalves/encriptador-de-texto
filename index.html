@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+		<title>Decodificador</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	</head>
+	<body>
+	<header>
+		<img src="imagens/logo-alura.png" alt="Logo da Alura">
+	</header>
+		<main class="container">
+			<section class="text">
+				<h1>Decodificador de texto</h1>
+				<p>Criptografia de ponta a ponta.</p>
+			</section>
+			<section class="secao-um">
+
+					<textarea required class="input-texto" cols="70" rows="15" placeholder="Digite o texto que você deseja criptografar ou descriptografar." onkeydown="toggleButton()"></textarea>
+				
+					<h6> &excl; Apenas letras minúsculas e sem acento.</h6>
+					
+				<div class="botoes">
+					<button type="submit" class="encriptar" onclick="btnEncriptar()" disabled >Criptografar</button>
+					<button type="submit" class="descriptografar" onclick="btnDesencriptar()" disabled >Descriptografar</button>
+				</div>
+			</section>
+			<section class="mensagem-box">
+				<textarea cols="28" rows="25" class="espaco-dois"></textarea>
+				<div id="div-aparece">
+					<button class="copiar" onclick="copiar()" disabled >Copiar</button>
+				</div>
+			</section>
+		</main>	
+	<footer>
+		<p class="rodape">Gabriel Freitas - 2022</p>
+	</footer>
+	<script src="script.js"></script>	
+	</body>
+</html>
